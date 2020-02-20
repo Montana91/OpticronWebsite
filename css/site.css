@@ -1,0 +1,19 @@
+﻿body {
+}
+
+#menu-title{
+    padding-right:830px;
+}
+#search{
+    padding-top:20px;
+}
+#session1, #session2, #session3 {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+#products{
+    margin-left:25%;
+    margin-right:25%;
+}

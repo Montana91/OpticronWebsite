@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="IndexPage.master.cs" Inherits="IndexPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+    </asp:ContentPlaceHolder>
+    </title>
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+                <div class="title-bar-title">Menu</div>
+            </div>
+
+            <div class="top-bar" id="example-menu">
+                <div class="top-bar-left">
+                    <ul class="menu align-center" id="menu-title">
+                        <li class="menu-text">
+                            <h4>Optictron</h4>
+                        </li>
+                    </ul>
+                    <ul class="menu align-center">
+
+                        <li><a href="#">Our Products</a></li>
+                        <li><a href="#">Where to Buy</a></li>
+                        <li><a href="#">News & Reviews</a></li>
+                        <li><a href="#">Help & Support</a></li>
+                        <li><a href="#">My Opticron</a></li>
+
+                        <li>
+                            <input type="search" placeholder="My Opticron"></li>
+                        <li>
+                            <button type="button" class="button">Search</button></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!--Content Area-->
+        <asp:ContentPlaceHolder ID="body" runat="server">
+        </asp:ContentPlaceHolder>
+        
+    </form>
+
+    <script src="../js/app.js"></script>
+
+    <script>
+        $(document).foundation();
+    </script>
+
+</body>
+</html>
+
